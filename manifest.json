@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Troll Reminder",
+  "description": "Replace the faceless social media icons with something more apropos",
+  "version": "1.0",
+  "permissions": [
+    "https://www.twitter.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "index.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
